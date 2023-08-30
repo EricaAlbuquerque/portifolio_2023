@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    background-image:url('background_cv.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Agency FB;
+    letter-spacing: 0.5px;
+    line-break:loose;
+    
+}
+#container-imagem {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* adicionando imagem de fundo */
+    
+}
+
+#header{
+    /*a pagina não possui header... o conteudo é de uma paginasó*/
+
+    }
+#conteudo{
+  /* largura da div para o background estender na pagina*/
+    position: relative;
+    /* altura da div */
+    height: 80vh;
+    width: 100vw;
+    
+    }
+
+.flex-container {
+    display: flex;
+    margin-top: 100px;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: rgb(238, 234, 234);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: rgba(22, 1, 22, 0.048);
+        
+      }
+.flex-item{
+   /*flex para foto do usuario */
+  margin-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 350px;
+  height: 400px;
+  font-size: 20px;
+  background-color:#304967;
+  align-items: center;     
+                
+         } 
+  /*posição da foto*/
+ .item{
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-left: 40px;
+   }
+.flex-item img{
+ border-radius: 50%;
+align-items: center ;
+width:243px;
+height:250px;
+padding-top: 8px;
+box-shadow: 3px 10px 7px rgba(20, 0, 0, 0.60);
+  }   
+
+ /*nome do usuario */ 
+ p{
+ 
+font-size: 40px;
+margin-top: 5px;
+margin-bottom: 5px;
+text-align: center;
+      }   
+   
+/*flex item para os dados do usurio*/     
+.flex-item2{
+  background: rgba(20, 17, 39, 0.705);
+  margin-top: 30px;
+  width: 650px;
+  height: 400px;
+  text-align: center;
+  font-size: 14px;
+
+  }     
+
+h4{
+
+ font-size: 20px;
+ margin-bottom: 0;
+
+  }
+    
+h3{
+ margin: 0; 
+padding-top: 15px;
+      
+  }
+/*data de nascimento e cidade*/
+.flex-item h2{
+ font-size: 14px; 
+margin: 0; 
+text-align:center;
+}
+
+/*formatação dos textos do perfil*/
+.flex-item2 h3,h5{
+font-size: 16px; 
+margin: 0; 
+text-align:center;
+}
+
+/*idiomas*/
+label {
+ padding-right: 10px;
+ font-size: 1rem;
+}
+
+/*tamanho da cor de fundo da barra de progresso*/
+.bar, .bar2 {
+width: 200px;
+height: 15px;
+border-radius: 25px;
+background-color: rgba(208, 183, 236, 0.5);
+/*para o inicio da barra nao ultrapassar os limites de largura em cor*/
+overflow: hidden;
+  }
+
+  /*preenchimento e cor do progresso*/
+.progress {
+width: 65%;
+height: 100%;
+background-color: #40adec;
+}
+
+.progress2 {
+width: 40%;
+height: 100%;
+background-color: #40adec;
+align-items: center;
+ }
+    
+ .container {
+   display: grid;
+  /*  são 2 colunas de tamanhos iguas, cada coluna tem uma fração */
+   grid-template-columns: repeat(2, 1fr);
+   /* esssa é a altura das linhas, */
+  grid-auto-rows: 50px;
+  /* espaço entre um elemento interno e outro */
+  grid-gap: 10px 30px;
+  padding: 5px 100px 10px;
+  height: 40px;
+
+   }
+/*os boxes irão comportar as barras de progresso*/
+/*box do ingles e alemão posiçoes e tamanho*/
+ .box {
+align-items: center;
+height: 50px;
+
+ }
+ /*espaçamento entre os icones*/
+ .flex-item2 i{
+  padding: 3px;
+ }
+
+/*formataçao para container de habilidades complementares*/
+      
+.container2{
+background-color: #010F30;
+height: px;
+align-items: center;
+padding-top: 5px ;
+padding-left: 0px;
+width: 1030px;
+text-align: center;
+        
+}
+/*flex onde contem os icones e imagens*/
+.flex-item3{
+display:flex;
+align-items: center;
+justify-content: space-evenly;
+margin-left: 20px;
+padding-bottom: 50px;
+padding-top: 15px;                    
+ }  
+
+ /*flex princiais projetos*/
+.flex-item3_1{
+height: 200px;
+background-color: #010f30;
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-top: 0px;
+padding-right:  50px;
+ 
+  
+}
+
+/*formatção do card e fontes dos projetos*/
+.card-text{
+  display: inline-block;
+  background-color: #020a1bd7;
+  border: 0px solid #49657c ;
+  /*acomodação dos texto dentro do card*/
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 50px;
+  font-family: Agency FB;
+  
+ }
+
+.card-text:focus,
+.card-text:hover{
+outline: none;
+border: 1px solid  #354569;
+/*mudança de ecursor para indicar algo a ser clicado*/
+cursor: pointer;
+  }
+/*link para direcionar ao projeto...aparecer somente texto sem hiperlink*/
+  a{
+  color: white;
+  text-decoration: none;
+ }
+ /*Formatção do card de contato background*/
+.card2{
+background-color:#49657c;
+height:380px;
+align-items: baseline;
+  
+}
+/*alimento do conteudo do card de contato*/
+.flex-box {
+  display: flex;
+  align-items: center;
+  
+  flex-flow: wrap;
+}
+/*para espaçamento entre os icones*/
+.card2 i{
+  align-items:flex-end;
+  padding: 3px;
+  justify-content: flex-end;
+}
+/*formatação dos box do flex box*/
+.card2 .content-box1  {
+  text-align:right;
+  width: 300px;
+  max-width: 600px;
+  max-height: 600px;
+  width: 40%;
+  height: auto;
+  justify-content: space-around;
+}
+.content-box2 {
+  color: rgba(255, 255, 255, 0.466);
+  text-align: center;
+  width: 300px;
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%;
+  height: 150px;
+  justify-content: end;
+  padding-top: 2px;
+  
+}    
+.content-box2 a { 
+  color: rgba(17, 5, 49, 0.562);
+  text-decoration: none;
+}
+
+/* formularuio*/
+/*caixa e tamanho da area do formulario*/
+.card-item{
+   background-color: #010F30;
+   width: 345px;
+   height: 315px;
+   margin-top: 50px;
+   border-radius: 2%;
+   align-items: center;
+   margin-left: 50px;
+ }
+.card-item input {
+  width: 280px;
+  height: 25px;
+  margin-bottom: 20px;
+  text-align: justify;
+  border-radius: 4px;
+  border: 0;
+  padding-right: 4px;
+  } 
+    
+    /*alinhamento dos elementos do formulario*/
+form{
+ margin-top: 25px;
+} 
+
+form label{
+font-size: 14px;
+font-family: Agency FB;
+
+}
+
+.card-item textarea:placeholder-shown,
+.card-item textarea{
+  width: 280px;
+  height: 80px;
+  padding-left: 0px;
+  border: 0;
+  font-family: Agency FB;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/*formatação botao 'enviar'*/
+form button{
+  height: 35px;
+  width: 65px;
+  background-color: #49657c;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+}
+/*ações de  cores no botao*/
+form button:hover,
+form button:focus{
+outline: none;
+background-color: #010F30;
+border: #49657c;
+
+}
+#footer{
+/*largura do mesmo tamanho do container anterior*/
+width: 1030px;
+height:55px;
+/* Cor de fundo da div */
+background-color: #010F30;
+justify-content: center;
+text-align: center;
+padding-top: 20px;
+
+  }
+  
